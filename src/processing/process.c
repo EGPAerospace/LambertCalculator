@@ -53,10 +53,10 @@ void computePCPData(){
     fillDateData(depOrigDataArray, &DateDepOrig);
 
     /* Opening file to store results */
-    dataInput = fopen("data/InputData.txt", "w");
-    in = fopen("data/LambertSolutionDataLong.txt", "w");
-    in2 = fopen("data/LambertSolutionDataShort.txt", "w");
-    pFile = fopen("data/PlanetsData.txt", "w");
+    dataInput = fopen("src/post/data/InputData.txt", "w");
+    in = fopen("src/post/data/LambertSolutionDataLong.txt", "w");
+    in2 = fopen("src/post/data/LambertSolutionDataShort.txt", "w");
+    pFile = fopen("src/post/data/PlanetsData.txt", "w");
 
     /* Print Input data on a file */
     printInputData(dataInput, &Input);
@@ -176,8 +176,8 @@ void computeTrajectoryData(){
     double deltaVDepLong, deltaVArrLong, deltaVTotLong;
     FILE *fileTransfers, *fileOrbitTransferData, *fileTrajectory;
 
-    fileTransfers = fopen("data/TransferData.txt", "w");
-    fileOrbitTransferData = fopen("data/TransferOrbitalData.txt", "w");
+    fileTransfers = fopen("src/post/data/TransferData.txt", "w");
+    fileOrbitTransferData = fopen("src/post/data/TransferOrbitalData.txt", "w");
 
     /* Get user input data */
     getTransferDates (&TransferDep, &TransferArr, &InputTrajectory);
@@ -248,7 +248,7 @@ void computeTrajectoryData(){
                                 &LambertFinal);
 
     timeStep = 0.0;
-    fileTrajectory = fopen("data/TrajectoryPoints.txt", "w");
+    fileTrajectory = fopen("src/post/data/TrajectoryPoints.txt", "w");
 
     while (timeStep <= deltaTTrans){
 

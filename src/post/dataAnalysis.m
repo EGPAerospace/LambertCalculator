@@ -5,10 +5,10 @@ clear all;
 close all;
 
 %%%%%%%%%%%%%%%%%%%%%%%%% Importing .txt files %%%%%%%%%%%%%%%%%%%%%%%%  
-fileNameInputs = '\LambertCalculator\data\InputData.txt';
-fileNameLambert = '\LambertCalculator\data\LambertSolutionDataShort.txt';
-fileNameTrajectory = '\LambertCalculator\data\TrajectoryPoints.txt';
-fileNameTransferDates = '\LambertCalculator\data\TransferData.txt';
+fileNameInputs = 'data/InputData.txt';
+fileNameLambert = 'data/LambertSolutionDataShort.txt';
+fileNameTrajectory = 'data/TrajectoryPoints.txt';
+fileNameTransferDates = 'data/TransferData.txt';
 
 DataInputStruct = functionImportInputData(fileNameInputs);
 rawDataLambert = functionImportData(fileNameLambert, '%f');
