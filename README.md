@@ -11,10 +11,6 @@ LambertCalculator is an open-source tool that allows the user to calculate a sin
 > On the left, a Pork Chop Plot corresponding to Earth-Mars transfer orbits.
 > On the right, a particular transfer orbit between Earth and Mars.
 
-## Installation
-
-## Usage
-
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information. 
